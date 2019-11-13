@@ -91,6 +91,8 @@ function purchaseConfirm(newStockQuantity, item, cost) {
         name: 'validatePurchase',
         message: "Would you like to complete your purchase?",
     }).then(function(answer) {
-        
+        if (answer.validatePurchase === true) {
+            console.log('\nWonderful! Your total is $' + cost.toFixed(2) + '.\n' + '\nThere is now ' + newStockQuantity + ' left of that item.\n');
+        }
     })
 }
