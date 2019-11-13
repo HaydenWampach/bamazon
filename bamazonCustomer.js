@@ -93,6 +93,17 @@ function purchaseConfirm(newStockQuantity, item, cost) {
     }).then(function(answer) {
         if (answer.validatePurchase === true) {
             console.log('\nWonderful! Your total is $' + cost.toFixed(2) + '.\n' + '\nThere is now ' + newStockQuantity + ' left of that item.\n');
+        } else {
+            console.log('Ok, no problem. Come back when you\'re ready to complete your purchase!');
         }
-    })
-}
+        let queary = 'UPDATE products SET ? WHERE ?';
+        //reconnect to DB to update the stock quantity for the item selected
+        connection.queary(queary, [{stock_quantity: newStockQuantity}, {id: item.id}], function(err, res) {
+            if (err) {
+                throw new Error(err);
+            } else if (res) {
+                connection.end();
+            };
+        }) ;
+    });
+};
