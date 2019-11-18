@@ -1,3 +1,6 @@
 # bamazon
 <p>In this activity, I created an Amazon-like storefront with the MySQL skills we learned in this unit. The app will take in orders from customers and deplete stock from the store's inventory. As a bonus task, you can program your app to track product sales across your store's departments and then provide a summary of the highest-grossing departments in the store.</p>
-<a href=https://share.getcloudapp.com/P8ulop4K>Click to play video</a>
+<a href=https://share.getcloudapp.com/P8ulop4K>Click to play video for node demonstration</a>
+<p>Once the user selects the item they would like, they are then prompted to select the quantity. If they select a quantity that is avaialable, then the number of items they select will be multiplied by the price to give a total. If they select a quantity of an item that is higher than the avaialable amount then they will be told there is not enough.</p>
+<br>
+<p>The database being used is constantly updated as the items are selected. This allows for the inventory to be reduced as the clients condtinue to purhcase items.</p>
