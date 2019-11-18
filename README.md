@@ -1,1 +1,3 @@
 # bamazon
+<p>In this activity, I created an Amazon-like storefront with the MySQL skills we learned in this unit. The app will take in orders from customers and deplete stock from the store's inventory. As a bonus task, you can program your app to track product sales across your store's departments and then provide a summary of the highest-grossing departments in the store.</p>
+<link src=https://share.getcloudapp.com/P8ulop4K>Click to play video</a>
